@@ -96,8 +96,13 @@ a:focus-visible, button:focus-visible, [role="button"]:focus-visible { outline: 
 .pills .p3 b { background: var(--tang); color: #1A0E08; }
 .pills .p4 b { border: 1.5px dashed var(--ink); }
 .pills .p4 { border-style: dashed; border-color: var(--muted); }
-.pills .p5 b { background: var(--ink); color: var(--ground); }
-.pills .p6 b { background: var(--sun); color: #1B1500; }
+.pills .p6 b { background: var(--ink); color: var(--ground); }
+.pills .p7 b { background: var(--sun); color: #1B1500; }
+.s7 { --c: #1B2A5E; --on: #FFFFFF; --acc: #1B2A5E; --acc-on: #FFFFFF; }
+:root[data-theme="dark"] .s7 { --acc: #8EA0FF; --acc-on: #0F1115; }
+.s7 .flow li::before { background: var(--acc); color: var(--acc-on); }
+.p5 b { background: #1B2A5E; color: #fff; }
+
 @media (prefers-reduced-motion: reduce) { .pills a { transition: none; } .pills a:hover { transform: none; } }
 
 /* Slides */
@@ -526,13 +531,14 @@ footer p { max-width: 74ch; }
       <a class="p2" href="#seo"><b>02</b>Listing SEO workflow</a><span class="op" aria-hidden="true">+</span>
       <a class="p3" href="#shopify"><b>03</b>Sheet-to-Shopify tool</a><span class="op" aria-hidden="true">&rarr;</span>
       <a class="p4" href="#auto"><b>04</b>Amazon operations, building</a>
-      <a class="p5" href="#store"><b>05</b>AI-run print shop store</a>
-      <a class="p6" href="#motion"><b>06</b>Motion graphics</a>
+      <a class="p5" href="#storefront"><b>05</b>Pacron Brand Store</a>
+      <a class="p6" href="#store"><b>06</b>AI-run print shop store</a>
+      <a class="p7" href="#motion"><b>07</b>Motion graphics</a>
     </nav>
   </header>
 
   <nav class="snav" id="snav" aria-label="Jump to a section">
-    <a href="#top">Top</a><a href="#history">Experience</a><a href="#tools">Tools</a><a href="#images">01 Images</a><a href="#seo">02 SEO</a><a href="#shopify">03 Shopify</a><a href="#auto">04 Amazon ops</a><a href="#store">05 Print shop store</a><a href="#motion">06 Motion</a><a href="#contact">Contact</a>
+    <a href="#top">Top</a><a href="#history">Experience</a><a href="#tools">Tools</a><a href="#images">01 Images</a><a href="#seo">02 SEO</a><a href="#shopify">03 Shopify</a><a href="#auto">04 Amazon ops</a><a href="#storefront">05 Brand Store</a><a href="#store">06 Print shop store</a><a href="#motion">07 Motion</a><a href="#contact">Contact</a>
   </nav>
 
   <!-- Experience -->
@@ -785,11 +791,65 @@ footer p { max-width: 74ch; }
     </div>
   </section>
 
-  <!-- 05 -->
+    <!-- 05 -->
+  <section class="slide s7" id="storefront">
+    <div class="band">
+      <div class="band-grid">
+        <div class="lhs"><span class="num" aria-hidden="true">05</span><h2>Pacron Brand Store</h2></div>
+        <div class="rhs"><span class="status">Live</span>
+          <p class="problem"><b>Goal.</b> A premium Amazon Brand Store for Pacron, one of the three brands in system 04, ready for the holiday season. Every image was created with the AI image system (system 01). Claude planned the pages, built all nine of them in Amazon's Store builder and submitted the Store for Amazon's review. It is live now.</p></div>
+      </div>
+      <div class="specs">
+        <div><span class="mono">Client</span><b>Pacron, one of three Amazon brands of a US packaging seller</b></div>
+        <div><span class="mono">Built with</span><b>The AI image system, Higgsfield, Claude, Amazon Store builder</b></div>
+        <div><span class="mono">Status</span><b>Built, submitted and live. The next version, a New Year restock, is planned.</b></div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="block">
+        <div class="sub"><h3>The Store, built and live</h3><span class="mark built">Built</span></div>
+        <p class="lede2">Click any image to open it full size. These are the images made for the Store.</p>
+        <div class="gal wide"><figure class="tile wide"><button type="button" class="open" aria-label="Open full size: Home page header"><img src="img/storefront/header-home-thumb.jpg" data-full="img/storefront/header-home-full.jpg" alt="Home page header" loading="lazy"></button><figcaption><b>Home page header</b> Made with the image system.</figcaption></figure><figure class="tile wide"><button type="button" class="open" aria-label="Open full size: Mailers page banner"><img src="img/storefront/mailers-thumb.jpg" data-full="img/storefront/mailers-full.jpg" alt="Mailers page banner" loading="lazy"></button><figcaption><b>Mailers page banner</b> Lifestyle scene built from the product masters.</figcaption></figure><figure class="tile wide"><button type="button" class="open" aria-label="Open full size: Bubble and Protection banner"><img src="img/storefront/bubble-thumb.jpg" data-full="img/storefront/bubble-full.jpg" alt="Bubble and Protection banner" loading="lazy"></button><figcaption><b>Bubble and Protection banner</b> One look across all nine pages.</figcaption></figure><figure class="tile wide"><button type="button" class="open" aria-label="Open full size: Insulated Shipping banner"><img src="img/storefront/insulated-thumb.jpg" data-full="img/storefront/insulated-full.jpg" alt="Insulated Shipping banner" loading="lazy"></button><figcaption><b>Insulated Shipping banner</b> Warm light, real-size products.</figcaption></figure><figure class="tile wide"><button type="button" class="open" aria-label="Open full size: Rolls banner"><img src="img/storefront/rolls-thumb.jpg" data-full="img/storefront/rolls-full.jpg" alt="Rolls banner" loading="lazy"></button><figcaption><b>Rolls banner</b> Eight roll types on one shelf.</figcaption></figure><figure class="tile wide"><button type="button" class="open" aria-label="Open full size: Holiday Shipping Essentials header"><img src="img/storefront/header-holiday-thumb.jpg" data-full="img/storefront/header-holiday-full.jpg" alt="Holiday Shipping Essentials header" loading="lazy"></button><figcaption><b>Holiday Shipping Essentials header</b> The seasonal page.</figcaption></figure><figure class="tile wide"><button type="button" class="open" aria-label="Open full size: Home page tiles"><img src="img/storefront/bento-thumb.jpg" data-full="img/storefront/bento-full.jpg" alt="Home page tiles" loading="lazy" style="object-fit:contain;background:#F4F1EA"></button><figcaption><b>Home page tiles</b> Categories as a bento layout.</figcaption></figure><figure class="tile wide"><button type="button" class="open" aria-label="Open full size: Home page set"><img src="img/storefront/homeset-thumb.jpg" data-full="img/storefront/homeset-full.jpg" alt="Home page set" loading="lazy" style="object-fit:contain;background:#F4F1EA"></button><figcaption><b>Home page set</b> Header, statement band and tiles together.</figcaption></figure></div>
+        <p><a href="https://www.amazon.com/stores/page/25A10F3F-3BEA-460D-8CE3-7815AE641F23" target="_blank" rel="noopener">Open the live Pacron Store on Amazon</a></p>
+      </div>
+      <div class="block">
+        <div class="sub"><h3>How it was made</h3><span class="mark built">Built</span></div>
+        <ol class="flow" style="--cols:4">
+          <li><b>Plan</b>A written storefront plan: page structure, holiday promotion and the rules the Store has to follow.<br><span class="who auto">Claude</span></li>
+          <li><b>Images</b>Headers, banners, category tiles, a shoppable lifestyle image and the home video, made with the AI image system from the brand's new product masters and labels.<br><span class="who auto">Image system</span></li>
+          <li><b>Build</b>All nine pages built in Amazon's Store builder: sections, tiles, links, product grids and product tags on the shoppable image.<br><span class="who auto">Claude</span></li>
+          <li><b>Submit</b>The Store version was checked and submitted for Amazon's review, then published.<br><span class="who person">Checked by a person</span></li>
+        </ol>
+      </div>
+      <div class="cols">
+        <div><h3>What the Store has</h3><span class="mark built">Built</span>
+          <ul class="plain">
+            <li>Nine pages: Home, Holiday Shipping Essentials, Mailers, Bubble and Protection, Insulated Shipping, Tape and Wrap, Rolls, Boxes and More, and Made in USA.</li>
+            <li>One consistent look: cream ground, navy type, warm window light and real-size products.</li>
+            <li>A background video on the home page, and a shoppable image with the products tagged.</li>
+            <li>Product grids and tiles linked to the right products across the Store.</li>
+          </ul></div>
+        <div><h3>What I can do for your brand</h3>
+          <ul class="plain">
+            <li>New brand guidelines, then the images for your Store, listings and A+ content from the same system.</li>
+            <li>Plan, build and submit the Store for you.</li>
+            <li>Keep it current with seasonal versions.</li>
+          </ul></div>
+        <div><h3>Next</h3><span class="mark plan">Planned</span>
+          <ul class="plain">
+            <li>A New Year restock version of the Store.</li>
+            <li>A mobile check and image alt text.</li>
+            <li>Moving kits and insulated box liner pages.</li>
+          </ul></div>
+      </div>
+    </div>
+  </section>
+
+<!-- 06 -->
   <section class="slide s5" id="store">
     <div class="band">
       <div class="band-grid">
-        <div class="lhs"><span class="num" aria-hidden="true">05</span><h2>AI-run print shop store</h2></div>
+        <div class="lhs"><span class="num" aria-hidden="true">06</span><h2>AI-run print shop store</h2></div>
         <div class="rhs"><span class="status">In progress</span>
           <p class="problem"><b>Goal.</b> Lev Impressions is a custom apparel print shop in Miami. It needs an online store that stays stocked from its supplier, lets customers design their own products, and hands every order to the right team without anyone retyping it. The site is created and managed with AI. The site, catalog and design studio are built. The order flow and the AI assistant below are the plan.</p></div>
       </div>
@@ -849,7 +909,7 @@ footer p { max-width: 74ch; }
   <section class="slide s6" id="motion">
     <div class="band">
       <div class="band-grid">
-        <div class="lhs"><span class="num" aria-hidden="true">06</span><h2>Motion graphics</h2></div>
+        <div class="lhs"><span class="num" aria-hidden="true">07</span><h2>Motion graphics</h2></div>
         <div class="rhs"><span class="status">Built</span>
           <p class="problem"><b>What.</b> Short animated pieces for social and ads, built as code so every word, colour and frame is exact and can be changed by editing the script and rendering again. Two launch reels for my own studio, eSalex, are shown here.</p></div>
       </div>
